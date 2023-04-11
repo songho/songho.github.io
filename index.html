@@ -23,15 +23,27 @@ body {
     font-family:"segoe ui", "HelveticaNeue-Light", "Helvetica Neue", "Helvetica", sans-serif;;
     font-weight:200;
     font-size:14px;
-    color:#fff;
+    color:#000;
     box-sizing:border-box;
     scroll:auto;
 }
 .flexblock {
     display:flex;
+    justify-content:center;
+    align-items:center;
+    width:100%;
 }
-.col1 {
+.col1, .col3 {
+    flex:0 1 25%;
+}
+.col2 {
     flex:1 1 auto;
+}
+.title {
+    font-size:3em;
+    font-weight:600;
+    color:#08f;
+    text-align:center;
 }
 img {
     max-width:100%;
@@ -46,7 +58,25 @@ img {
 <body>
 
 <div class="flexblock">
-<img class="col1" src="skull13.png">
+
+<div class="col1">
+</div>
+
+<div class="col2" >
+<div class="title">
+songho.ca
+</div>
+<a href="https://ltsa.sheridancollege.ca/apps/3d-imaging/compare2022.html"><img src="skull13.png"></a>
+<br>
+<a href="https://ltsa.sheridancollege.ca/apps/3d-imaging/compare2022.html"><img src="mobile03.png"></a>
+<br>
+<img src="qr-code.png">
+
+</div>
+
+<div class="col3">
+</div>
+
 </div>
 
 </body>
